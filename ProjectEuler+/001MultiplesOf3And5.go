@@ -2,6 +2,7 @@ package main
 
 import "fmt"
 
+// pass all
 func main() {
     var n int
     fmt.Scan(&n)

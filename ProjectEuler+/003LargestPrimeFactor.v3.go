@@ -5,6 +5,7 @@ import (
     "math"
 )
 
+// pass all
 func main() {
     var n int
     fmt.Scan(&n)

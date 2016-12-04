@@ -5,6 +5,7 @@ import (
     "math"
 )
 
+// pass test case #0 #1 #2 #3 #4
 // timeout on test case #5
 func main() {
     var n int

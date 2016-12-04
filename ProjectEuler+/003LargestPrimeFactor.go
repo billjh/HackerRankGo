@@ -2,6 +2,7 @@ package main
 
 import "fmt"
 
+// pass test case #0 #1 #2 #3
 // timeout on test case #4 #5
 func main() {
     var n int
