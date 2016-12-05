@@ -6,6 +6,7 @@ import (
 )
 
 // pass all
+
 func main() {
     var t int
     fmt.Scan(&t)
