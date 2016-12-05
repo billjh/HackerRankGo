@@ -1,12 +1,9 @@
 package main
 
-import (
-    "fmt"
-    "math"
-)
+import "fmt"
 
-// pass test case #0 #1 #2 #3 #4
-// timeout on test case #5
+// pass test case #0 #1 #2 #4
+// timeout on test case #3 #5
 func main() {
     var n int
     fmt.Scan(&n)
@@ -39,15 +36,18 @@ func Primes(out chan<- int) {
     out <- 2
     primes := []int{2}
     for n := 3; ; n += 2 {
+        ok := true
         for _, p := range primes {
-            if float64(p) > math.Sqrt(float64(n)) {
+            if n%p == 0 {
+                ok = false
                 break
             }
-            if n%p == 0 {
-                continue
-            }
         }
-        primes = append(primes, n)
-        out <- n
+        if ok {
+            primes = append(primes, n)
+            out <- n
+        } else {
+            continue
+        }
     }
 }
