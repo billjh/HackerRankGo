@@ -31,6 +31,7 @@ func largestPrimeFactor(n int) int {
     }
 }
 
+// note: there is an enhanced version in 007_10001stPrime.v2.go
 // send primes to channel out
 func Primes(out chan<- int) {
     out <- 2
