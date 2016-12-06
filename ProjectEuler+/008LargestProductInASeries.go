@@ -5,6 +5,7 @@ import (
     "strconv"
 )
 
+// pass all
 func main() {
     var t int
     fmt.Scan(&t)
