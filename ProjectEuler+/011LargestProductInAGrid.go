@@ -4,6 +4,7 @@ import "fmt"
 
 const GRID_SIZE = 20
 
+// pass all
 func main() {
     grid := make([][]int, GRID_SIZE)
     for i := 0; i < GRID_SIZE; i++ {
