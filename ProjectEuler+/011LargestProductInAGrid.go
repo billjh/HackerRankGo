@@ -14,7 +14,6 @@ func main() {
         }
     }
     fmt.Println(calculate(grid, GRID_SIZE, 4))
-
 }
 
 func calculate(grid [][]int, n, k int) int {
