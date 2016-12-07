@@ -5,8 +5,7 @@ import (
     "math"
 )
 
-// pass test case #0 #1 #2 #3
-// timeout on test case #4 #5 #6 #7
+// pass all
 func main() {
     var t int
     fmt.Scan(&t)
