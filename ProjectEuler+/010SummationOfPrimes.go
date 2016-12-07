@@ -9,16 +9,7 @@ import (
 func main() {
     var t int
     fmt.Scan(&t)
-    limits := []int{}
-    top := 0
-    for i := 0; i < t; i++ {
-        var n int
-        fmt.Scan(&n)
-        limits = append(limits, n)
-        if n > top {
-            top = n
-        }
-    }
+    top, limits := scanInts(t)
     primes := getPrimes(top)
     for i := 0; i < t; i++ {
         sum := 0
@@ -76,4 +67,21 @@ func Primes(out chan<- int) {
             continue
         }
     }
+}
+
+// refactored with: 012HighlyDivisibleTriangularNumber.go
+// scan a number of integers
+// return the maximum and an array
+func scanInts(n int) (top int, arr []int) {
+    arr = make([]int, n)
+    top = math.MinInt64
+    for i := 0; i < n; i++ {
+        var m int
+        fmt.Scan(&m)
+        arr[i] = m
+        if m > top {
+            top = m
+        }
+    }
+    return
 }
