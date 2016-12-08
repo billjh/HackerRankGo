@@ -51,6 +51,7 @@ func countFactors(n int) int {
     return total
 }
 
+// refer to: 012HighlyDivisibleTriangularNumber.go
 // scan a number of integers
 // return the maximum and an array
 func scanInts(n int) (top int, arr []int) {
