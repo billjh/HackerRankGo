@@ -4,4 +4,4 @@ Solving https://www.hackerrank.com/ with Golang (and some Python for OOP problem
 - [ProjectEuler+](https://www.hackerrank.com/contests/projecteuler/challenges)
 - [Data Structures](https://www.hackerrank.com/domains/data-structures)
     - [Arrays](https://www.hackerrank.com/domains/data-structures/arrays)
-    - [Linked Lists](https://www.hackerrank.com/domains/data-structures/linked-lists/page:1)
+    - [Linked Lists](https://www.hackerrank.com/domains/data-structures/linked-lists)
