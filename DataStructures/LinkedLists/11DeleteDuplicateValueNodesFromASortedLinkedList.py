@@ -15,10 +15,13 @@
 def RemoveDuplicates(head):
     if head == None:
         return head
+    # Cache the current Node and data
     cur, value = head, head.data
     while cur.next != None:
         if value != cur.next.data:
+            # Refresh cache
             cur, value = cur.next, cur.next.data
         else:
+            # Skip the Node by redirecting next pointer
             cur.next = cur.next.next
     return head

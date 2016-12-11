@@ -18,7 +18,9 @@ def ReversePrint(head):
     l = [head.data]
     cur = head
     while cur.next != None:
+        # Push Node data into the start of a list
         cur = cur.next
         l = [cur.data] + l
     for i in l:
+        # Print data by order
         print(i)

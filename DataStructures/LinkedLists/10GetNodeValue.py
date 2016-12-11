@@ -15,13 +15,14 @@
 def GetNode(head, position):
     if head == None:
         return None
-    pos = position + 1
-    count = 0
-    cache = [None] * pos # an array to cache position + 1 node data
-    while head.next != None:
+    # Actually it's (postion + 1)-th Node from the end
+    pos, count = position + 1, 0
+    # Cache data of last n Nodes
+    cache = [None] * pos
+    while head != None:
+        # Move towards the end of list and refresh cache
         cache[count%pos] = head.data
         count += 1
         head = head.next
-    cache[count%pos] = head.data
-    count += 1
+    # Return data from cache
     return cache[count%pos]
