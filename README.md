@@ -7,3 +7,4 @@ Solving https://www.hackerrank.com/ with Golang (and some Python for OOP problem
     - [Linked Lists](https://www.hackerrank.com/domains/data-structures/linked-lists)
 - [Algorithms](https://www.hackerrank.com/domains/algorithms)
     - [Warmup](https://www.hackerrank.com/domains/algorithms/warmup)
+    - [Implementation](https://www.hackerrank.com/domains/algorithms/implementation)
