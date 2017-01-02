@@ -10,9 +10,7 @@ class Person:
 # Implemented Student class
 class Student(Person):
     def __init__(self, firstName, lastName, idNumber, scores):
-        self.firstName = firstName
-        self.lastName = lastName
-        self.idNumber = idNumber
+        super().__init__(firstName, lastName, idNumber)
         self.scores = scores
     def calculate(self):
         avg = sum(scores)/len(scores)
